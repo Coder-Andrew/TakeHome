@@ -23,4 +23,4 @@
 
 
 ## Trade-offs / Decisions
-
+- Decided to go with images/assets directly from Figma instead of react-icons for consistency
