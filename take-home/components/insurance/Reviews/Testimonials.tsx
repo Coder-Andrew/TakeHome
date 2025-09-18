@@ -22,7 +22,9 @@ const Testimonials = () => {
                     <div className="relative h-11">
                         <span className="absolute -top-2 -left-1 leading-none text-8xl text-green-600">“</span>
                     </div>
-                    <h3 className="text-bold text-gray-800 text-lg mb-2">{t.title}</h3>
+                    <h3 className="font-semibold text-gray-800 text-lg mb-2">
+                        {t.title}
+                    </h3>
                     <div className="flex mb-2">
                         <Stars number={5} width={20} height={20} />
                         <p className="text-gray-600 font-medium px-2">{t.age}</p>

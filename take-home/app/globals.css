@@ -11,8 +11,14 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   
-  --color-green-800: #183825;
   --color-green-900: #132F1E;
+  --color-green-800: #183825;
+  --color-green-700: #00BE50;
+  --color-green-500: #00B34B;
+
+  --color-blue-100: #F2F8FF;
+  --color-indigo-700: #143863;
+  --color-black-600: #191919;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -3,7 +3,7 @@ import TrustPilot from "@/components/insurance/Reviews/Trustpilot";
 
 const Reviews = () => {
     return (
-        <div className="bg-white py-8 sm:py-12 md:py-16">
+        <div className="bg-white pt-10 pb-40">
             <TrustPilot />
             <Testimonials />
         </div>

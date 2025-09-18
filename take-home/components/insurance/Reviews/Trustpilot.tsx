@@ -3,7 +3,7 @@ import Stars from "./Stars";
 
 const TrustPilot = () => {
     return (
-        <div className="flex flex-col md:justify-around items-center md:flex-row py-8 sm:py-12 md:py-16">
+        <div className="flex flex-col items-center md:justify-around md:flex-row md:items-start pb-5">
             <div className="px-4">
                 <div className="mb-8 sm:mb-12">
                     <div className="text-center mb-6 sm:mb-0 sm:text-left">
@@ -12,7 +12,7 @@ const TrustPilot = () => {
 
                         <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start space-y-2 sm:space-y-0 sm:space-x-4">
                             <div className="flex items-center space-x-2">
-                                <span className="bg-green-600 text-white px-2 py-1 rounded text-xs sm:text-sm font-semibold">Excellent</span>
+                                <span className="text-black-600 px-2 py-1 rounded text-xs sm:text-sm font-semibold">Excellent</span>
                                 <div className="flex space-x-1">                            
                                     {[...Array(5)].map((_, i) => (
                                         <div key={i} className="">
@@ -24,8 +24,11 @@ const TrustPilot = () => {
                                             />
                                         </div>
                                     ))}
-                                    <span className="text-xs sm:text-sm text-gray-600">436 reviews on</span>
-                                    <span className="text-xs sm:text-sm font-semibold text-gray-800">Trustpilot</span>
+                                    <span className="text-xs sm:text-sm text-black-600"><span className="font-bold">436 </span>reviews on</span>
+                                    <span className="text-xs sm:text-sm font-semibold text-gray-800 flex flex-row">
+                                        <Stars number={1} height={20} width={20} />
+                                        Trustpilot
+                                    </span>
                                 </div>  
                             </div>
                         </div>

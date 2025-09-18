@@ -12,8 +12,8 @@ const BrandBadge = () => {
             />
             <p>
                 Civil Car
+                <span className="text-green-700"> Policy</span>
             </p>
-            <span className="text-green-700">Policy</span>
         </div>
     );
 }
