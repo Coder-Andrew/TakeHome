@@ -1,14 +1,13 @@
-import TrustPilot from "@/components/insurance/Reviews/Trustpilot";
 import Hero from "../insurance/components/hero";
 import Reviews from "./components/reviews";
-import Brands from "./components/brands";
+import Footer from "./components/footer";
 
 const page = () => {
     return (
         <>
             <Hero />
             <Reviews />
-            <Brands />
+            <Footer />
         </>
     );
 }

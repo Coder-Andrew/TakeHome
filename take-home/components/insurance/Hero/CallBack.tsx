@@ -6,6 +6,11 @@ import { useEffect, useState } from "react";
 const CallBack = () => {
     const [ phoneNumber, setPhoneNumber ] = useState("");
 
+    // Putting this here since we're already using client
+    useEffect(() => {
+        console.log("page_view");
+    },[]);
+
     const isValidPhonenumber = (phone: string) => {
         const pattern = /^(\+?\d{1,2}\s?)?(\(?\d{3}\)?[\s.-]?)\d{3}[\s.-]?\d{4}$/;
         return pattern.test(phone);
@@ -13,6 +18,7 @@ const CallBack = () => {
 
     const onPost = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        console.log("form_submit_attempt");
 
         if (!isValidPhonenumber(phoneNumber)) {
             console.log("form_submit_fail");

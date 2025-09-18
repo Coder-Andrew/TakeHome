@@ -1,7 +1,6 @@
 import Stars from "./Stars";
 import { FaCheckCircle } from "react-icons/fa";
 
-
 const Testimonials = () => {
     const testimonials = [
         { title: "The ultimate go-to", age:"2 weeks ago",  name: "Zaire Bator", circleColor: "#F5A623", review: "The signup process was a breeze, and the savings are real. I'm recommending this to everyone!"},
