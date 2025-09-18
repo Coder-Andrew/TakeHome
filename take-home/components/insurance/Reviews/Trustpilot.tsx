@@ -1,0 +1,51 @@
+import Image from "next/image";
+import Stars from "./Stars";
+
+const TrustPilot = () => {
+    return (
+        <div className="flex flex-col md:justify-around items-center md:flex-row py-8 sm:py-12 md:py-16">
+            <div className="px-4">
+                <div className="mb-8 sm:mb-12">
+                    <div className="text-center mb-6 sm:mb-0 sm:text-left">
+                        <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2">Customer Reviews</h2>
+                        <p className="text-gray-600 text-sm sm:text-base mb-4">Real feedback from real drivers. Learn how we&apos;ve helped our customers save on auto insurance.</p>
+
+                        <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start space-y-2 sm:space-y-0 sm:space-x-4">
+                            <div className="flex items-center space-x-2">
+                                <span className="bg-green-600 text-white px-2 py-1 rounded text-xs sm:text-sm font-semibold">Excellent</span>
+                                <div className="flex space-x-1">                            
+                                    {[...Array(5)].map((_, i) => (
+                                        <div key={i} className="">
+                                            <Image 
+                                                src="/icons/trustpilot-star.png"
+                                                width={20}
+                                                height={20}
+                                                alt="Trustpilot Logo"
+                                            />
+                                        </div>
+                                    ))}
+                                    <span className="text-xs sm:text-sm text-gray-600">436 reviews on</span>
+                                    <span className="text-xs sm:text-sm font-semibold text-gray-800">Trustpilot</span>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="flex items-start justify-center flex-col sm:justify-end space-x-2 mt-4 sm:mt-0">
+                <div className="flex items-end">
+                        <Stars number={1} width={50} height={50} />
+                        <h1 className="text-3xl sm:text-2xl font-bold text-gray-800">Trustpilot</h1>
+                </div>
+                    <div className="ml-2 sm:ml-4 flex items-center gap-2">
+                        <div className="text-xs sm:text-sm font-semibold text-gray-800">FIVE STAR REVIEWS</div>
+                        <div className="flex space-x-1">
+                            <Stars number={5} height={20} width={20} />
+                        </div>
+                    </div>
+                </div>
+            </div>
+    );
+}
+ 
+export default TrustPilot;
