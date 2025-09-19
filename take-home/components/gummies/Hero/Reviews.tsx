@@ -28,7 +28,7 @@ const Reviews = () => {
             </div>
             <div className="flex flex-col">
                 <div className="flex items-center gap-2">
-                    <div className="flex">
+                    <div className="flex" aria-hidden="true">
                         {[...Array(5)].map((_, i) => (
                             <FaStar key={i} className="text-yellow-400"/>
                         ))}

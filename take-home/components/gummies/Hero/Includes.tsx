@@ -16,10 +16,10 @@ const Includes = () => {
             <h2 id="includes-heading" className="sr-only">Product attributes</h2>
             <ul className="flex flex-wrap gap-2">
                 { titles.map(title => (
-                    <div key={title} className="flex items-center gap-1 rounded-xl px-3 py-1 bg-white">
+                    <li key={title} className="flex items-center gap-1 rounded-xl px-3 py-1 bg-white">
                         <HiMiniCheckBadge className="text-pink-500"/>
                         <span className="text-sm">{title}</span>
-                    </div>
+                    </li>
                 ))}
             </ul>
         </section>

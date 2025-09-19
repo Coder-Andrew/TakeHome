@@ -7,7 +7,7 @@ const CTA = () => {
                 className="text-sm bg-pink-500 inline-flex items-center text-white px-15 lg:w-11/12 py-3 rounded-xl justify-center"
             >
                 Order Now
-                <IoIosArrowRoundForward size={25}/>
+                <IoIosArrowRoundForward aria-hidden="true" focusable="false" size={25}/>
             </button>
         </div>
     );
