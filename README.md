@@ -54,7 +54,8 @@ Navigate to `localhost:3000` in a browser
 [Full Report](/Lighthouse-Gummy.pdf)
 
 ## Trade-offs / Decisions
-- Directly used some of the images/icons pulled from Figma instead of react-icons for consistency
+- Directly used some of the images/icons pulled from Figma instead of react-icons for consistency.
 - Some parts of the code could be better componentized. I didn’t go as far as I could here due to both limited experience in that area and time considerations.
 - Worked on getting most of the core items on Task 2 (Hero + CTA). With more time, I would work on polishing it out a bit more (hover states, better alignment, cleaning up project structure a bit better). 
 - Focused on mobile-first responsiveness. Desktop layouts work, but could use more refinement with additional time.
+- Implemented some accessibility best practices (semantic HTML, alt text on images). Didn’t fully address ARIA compliance across all components due to time constraints, but I would expand on that in a production setting.
