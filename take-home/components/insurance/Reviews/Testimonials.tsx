@@ -13,15 +13,16 @@ const Testimonials = () => {
     };
 
     return (
-        // Maybe move off into own component, then iterate
-        <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-3 lg:max-w-7xl px-4  mx-auto">
+        <section className="grid gap-6 sm:grid-cols-1 lg:grid-cols-3 lg:max-w-7xl px-4 mx-auto" aria-labelledby="testimonials-heading">
+            <h2 id="testimonials-heading" className="sr-only">
+                Customer testimonials
+            </h2>
             { testimonials.map(t => (
-                <div key={t.name} className="bg-white shadow-lg rounded-xs p-6 border-gray-300/30 border">
-                    {/* <span className="pointer-events-none relative -top-2  text-7xl leading-none text-green-600">“</span> */}
+                <article key={t.name} aria-labelledby={`${t.name}-title`} className="bg-white shadow-lg rounded-xs p-6 border-gray-300/30 border">
                     <div className="relative h-11">
-                        <span className="absolute -top-2 -left-1 leading-none text-8xl text-green-600">“</span>
+                        <span className="absolute -top-2 -left-1 leading-none text-8xl text-green-600" aria-hidden="true">“</span>
                     </div>
-                    <h3 className="font-semibold text-gray-800 text-lg mb-2">
+                    <h3 id={`${t.name}-title`} className="font-semibold text-gray-800 text-lg mb-2">
                         {t.title}
                     </h3>
                     <div className="flex mb-2">
@@ -33,8 +34,8 @@ const Testimonials = () => {
                         {t.review}
                         &quot;
                         </p>
-                    <div className="flex items-center gap-3">
-                        <div>
+                    <footer className="flex items-center gap-3">
+                        <div aria-hidden="true">
                             <svg width={50} height={50} viewBox="0 0 100 100">
                                 <circle cx={50} cy={50} r={50} fill={t.circleColor}/>
                                 <text
@@ -52,28 +53,12 @@ const Testimonials = () => {
                         </div>
                         <div className="flex-col">
                             <p className="font-semibold text-gray-800">{t.name}</p>
-                            <p className="text-sm font-semibold text-green-600 flex items-center gap-1"><FaCheckCircle /> Verified Buyer</p>
+                            <p className="text-sm font-semibold text-green-600 flex items-center gap-1"><FaCheckCircle aria-hidden="true"/> Verified Buyer</p>
                         </div>
-                    </div>
-                </div>
+                    </footer>
+                </article>
             ))}
-        </div>
-
-//         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-//   {/* Card 1 */}
-//   <div className="bg-white shadow-md rounded-lg p-6">
-//     <p className="text-gray-600 mb-4">"The signup process was a breeze, and the savings are real."</p>
-//     <div className="flex items-center space-x-3">
-//       <div className="h-10 w-10 rounded-full bg-gray-200"></div>
-//       <div>
-//         <p className="font-semibold text-gray-800">Zaire Bator</p>
-//         <p className="text-sm text-green-600">Verified Buyer</p>
-//       </div>
-//     </div>
-//   </div>
-
-//   {/* Repeat for other cards */}
-// </div>
+        </section>
     );
 }
  

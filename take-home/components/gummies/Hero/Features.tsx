@@ -24,9 +24,10 @@ const Features = () => {
 
 
     return (
-        <div className="py-16">
+        <section aria-labelledby="features-heading" className="py-16">
+            <h2 className="sr-only" id="features-heading">Product Features</h2>
             <div className="container mx-auto px-4">
-                <div className="grid sm:grid-cols-1 px-2 lg:grid-cols-3 gap-8">
+                <article className="grid sm:grid-cols-1 px-2 lg:grid-cols-3 gap-8">
                     {features.map((feature, index) => (
                         <div key={index} className="p-6 text-left space-y-4 border-1 rounded-4xl shadow-sm">
                             <div className="flex justify-left">
@@ -41,9 +42,9 @@ const Features = () => {
                             <p className="text-sm text-gray-600 leading-relaxed">{feature.description}</p>
                         </div>
                     ))}
-                </div>
+                </article>
             </div>
-        </div>
+        </section>
     );
 }
  

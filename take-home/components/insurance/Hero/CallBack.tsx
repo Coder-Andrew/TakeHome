@@ -44,10 +44,12 @@ const CallBack = () => {
             <div className="bg-green-900 bg-opacity-50 border border-white/12 rounded-2xl p-6">
                 <h3 className="text-center text-lg font-semibold mb-2">Don&apos;t have time to call?</h3>
                 <p className="text-center text-gray-200 mb-6">Leave your number &mdash; we&apos;ll call you back in 2 minutes</p>
-                <form className="flex flex-col md:flex-row space-x-3" onSubmit={onPost}>
+                <form className="flex flex-col md:flex-row space-x-3" onSubmit={onPost} aria-label="Call back form">
+                    <label htmlFor="phone" className="sr-only">Phone number</label>
                     <input 
                         className="w-full sm:flex-1 px-3 sm:px-4 py-3 bg-transparent border-2 border-green-800 rounded-lg text-white placeholder-gray-300 focus:outline-none focus:border-green-400 text-sm sm:text-base"
                         type="tel"
+                        id="phone"
                         placeholder="Your phone number"
                         value={phoneNumber}
                         onChange={e => setPhoneNumber(e.target.value)}
@@ -58,7 +60,7 @@ const CallBack = () => {
                             src="/icons/call-inbound.svg"
                             width={15}
                             height={15}
-                            alt="Inbound Call"
+                            alt="Inbound Call Icon"
                         />
                     </button>
                 </form>

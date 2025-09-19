@@ -10,10 +10,10 @@ const BrandBadge = () => {
                 height={32}
                 className="h-8 w-8"
             />
-            <p>
+            <span>
                 Civil Car
                 <span className="text-green-700"> Policy</span>
-            </p>
+            </span>
         </div>
     );
 }

@@ -5,7 +5,7 @@ import HeroHeading from "@/components/insurance/Hero/HeroHeading";
 
 const Hero = () => {
     return ( 
-        <section className="bg-green-800 pb-20 text-center">
+        <main className="bg-green-800 pb-20 text-center">
             <div className="pt-6 sm:pt-10 flex flex-col items-center text-center space-y-5 sm:space-y-6">
                 <BrandBadge />
                 <HeroHeading />
@@ -16,7 +16,7 @@ const Hero = () => {
             <div className="px-3">
                 <CallBack />
             </div>
-        </section>
+        </main>
     );
 }
  

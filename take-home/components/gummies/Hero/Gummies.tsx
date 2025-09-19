@@ -13,6 +13,7 @@ const Gummies = () => {
         />
         <Image
           className="absolute left-[60px] lg:left-[100px] top-[20px] lg:top-[40px] z-10 w-[180px] lg:w-[240px] h-auto object-contain opacity-90"
+          aria-hidden="true"
           src="/icons/gummy-2.svg"
           alt="Nitric Oxide Gummy 2"
           width={240}

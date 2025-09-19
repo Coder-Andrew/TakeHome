@@ -2,7 +2,8 @@ import CircleBadge from "./CircleBadge";
 
 const PromotionBadges = () => {
     return (
-        <div>
+        <section aria-labelledby="promo-heading">
+            <h2 id="promo-heading" className="sr-only">Promotional offers</h2>
             <CircleBadge
                 size={100}
                 rotateDeg={15}
@@ -29,7 +30,7 @@ const PromotionBadges = () => {
                   <div className="text-xs font-semibold opacity-90">bottle</div>
                 </div>
             </CircleBadge>
-        </div>
+        </section>
     );
 }
  

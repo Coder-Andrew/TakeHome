@@ -1,16 +1,17 @@
 import Image from "next/image";
 
-interface StarsProps {
+type StarsProps = {
     number: number,
     width: number,
-    height: number,    
+    height: number,
+    className?: string,
 }
 
-const Stars = ({number, width, height}: StarsProps) => {
+const Stars = ({number, width, height, className}: StarsProps) => {
     return (
-        <>
+        <div aria-hidden="true" className={`flex ${className}`}>
             {[...Array(number)].map((_, i) => (
-                <div key={i} className="">
+                <div key={i}>
                     <Image 
                         src="/icons/trustpilot-star.png"
                         width={width}
@@ -19,7 +20,7 @@ const Stars = ({number, width, height}: StarsProps) => {
                     />
                 </div>
             ))}
-        </>
+        </div>
     );
 }
  

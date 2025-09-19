@@ -18,6 +18,7 @@ const CallNow = () => {
                 width={12}
                 height={12}
                 alt="Outbound Phone Call"
+                aria-hidden="true"
             />
         </button>
     );

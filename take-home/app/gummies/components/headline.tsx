@@ -3,7 +3,8 @@ import { IoIosArrowRoundDown } from "react-icons/io";
 
 const Headline = () => {
     return (
-        <div className="flex flex-col items-center gap-5">
+        <section aria-labelledby="headline-section" className="flex flex-col items-center gap-5">
+            <h2 id="headline-section" className="sr-only">Snap Gummy headline section</h2>
             <div className="uppercase text-black text-center font-bold">
                 <h1>Boost your heart</h1>
                 <h1>Health & Energy With</h1>
@@ -14,7 +15,7 @@ const Headline = () => {
                     <IoIosArrowRoundDown />
                 </button>
             </div>
-        </div>
+        </section>
     );
 }
  

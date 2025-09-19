@@ -3,7 +3,8 @@ import CircleBadge from "./CircleBadge";
 // Should probably generalize better, not hardcode
 const MobilePromotionBadges = () => {
     return (
-        <div>
+        <section aria-labelledby="promo-heading">
+            <h2 id="promo-heading" className="sr-only">Promotional offers</h2>
             <CircleBadge
                 size={90}
                 rotateDeg={15}
@@ -30,7 +31,7 @@ const MobilePromotionBadges = () => {
                   <div className="text-xs font-semibold opacity-90">bottle</div>
                 </div>
             </CircleBadge>
-        </div>
+        </section>
     );
 }
  

@@ -13,7 +13,7 @@ const Reviews = () => {
     const width = 35;
 
     return (
-        <div className="flex items-center gap-3">
+        <figure className="flex items-center gap-3">
             <div className="flex relative">
                 {images.map((img, i) => (                
                     <Image 
@@ -39,7 +39,7 @@ const Reviews = () => {
                     <p className="text-gray-700 text-xs">+ 1,200 with Verified Reviews</p>
                 </div>
             </div>
-        </div>
+        </figure>
     );
 }
  

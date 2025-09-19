@@ -8,7 +8,8 @@ const ApprovedBy = () => {
     ];
 
     return (
-        <div className="flex justify-evenly flex-row lg:flex-col">
+        <section aria-labelledby="approved-heading" className="flex justify-evenly flex-row lg:flex-col">
+            <h2 id="approved-heading" className="sr-only">Product approval seals</h2>
             {paths.map((img, i) => (
                 <Image
                     key={i}
@@ -18,7 +19,7 @@ const ApprovedBy = () => {
                     height={75}
                 />
             ))}
-        </div>
+        </section>
     );
 }
  
