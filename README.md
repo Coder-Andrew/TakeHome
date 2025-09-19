@@ -1,4 +1,6 @@
 # Trend Capital Front-End Take-Home Test
+This repo contains my implementation of the Trend Capital front-end take-home.  
+It includes two responsive landing pages (Insurance and E-commerce Hero + CTA) built with Next.js and TailwindCSS, with a focus on performance and mobile-first design.
 
 ## Setup
 
@@ -10,18 +12,21 @@
 Clone the repository and install dependencies:
 
 ```bash
-git clone [repo-url]
-cd [project-folder]
+git clone https://github.com/Coder-Andrew/TakeHome.git
+cd take-home
 npm install
 ```
 
+Run the project
 ```bash
 npm run dev
 ```
 
+Navigate to `localhost:3000` in a browser
+
 ## Live URLs
-- Car Insurance Landing Page: 
-- E-commerce Hero + CTA: 
+- Car Insurance Landing Page: https://take-home-xl4e.vercel.app/insurance
+- E-commerce Hero + CTA: https://take-home-xl4e.vercel.app/gummies
 
 ## Time Spent
 
@@ -33,11 +38,20 @@ npm run dev
 - Touch-ups: 1h
 
 ### E-commerce Hero + CTA
-- Hero: 3.5hours
-- Supporting CTA Block: 30m
+- Hero: 3.5h
+- Supporting CTA Block: 1h
+- Touch-ups: 1h
 
 ## Lighthouse
+### Insurance Landing Page
+![Insurance Landing Page Lighthouse Score](/Lighthouse-Insurance-Pic.PNG)
 
+[Full Report](/Lighthouse-Insurance.pdf)
+
+### Gummy Landing Page
+![Gummy Landing Page Lighthouse Score](/Lighthouse-Gummy-Pic.PNG)
+
+[Full Report](/Lighthouse-Gummy.pdf)
 
 ## Trade-offs / Decisions
 - Directly used some of the images/icons pulled from Figma instead of react-icons for consistency
