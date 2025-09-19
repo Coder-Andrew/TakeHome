@@ -19,6 +19,12 @@
   --color-blue-100: #F2F8FF;
   --color-indigo-700: #143863;
   --color-black-600: #191919;
+
+  --color-pink-500: #E43365;
+
+  --color-white-800: #F5F5F5;
+
+  --color-muted: #777777;
 }
 
 @media (prefers-color-scheme: dark) {
